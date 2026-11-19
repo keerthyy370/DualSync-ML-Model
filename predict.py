@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-MODEL_DIR = Path(__file__).parent / "saved_model"
+MODEL_DIR = Path(__file__).parent
 
 rf_model = joblib.load(MODEL_DIR / "dualsync_rf_model.joblib")
 gb_model = joblib.load(MODEL_DIR / "dualsync_gb_model.joblib")
